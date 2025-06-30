@@ -1,3 +1,6 @@
+import sys
+import os
+sys.path.append(os.path.abspath("../processus"))
 import gradio as gr
 import torch
 import torchaudio
@@ -6,8 +9,8 @@ from model import GRUSeq2Seq
 torchaudio.set_audio_backend("soundfile")
 
 # Chargement du modèle et vocabulaire
-MODEL_PATH = "best_model_GRUseq2seq.pt"
-VOCAB_PATH = "vocab4.json"
+MODEL_PATH = r"C:\Users\Christian\Desktop\YembaTones\RNN-pour-ASR-en-Yemba\processus\best_model_GRUseq2seq.pt"
+VOCAB_PATH = r"C:\Users\Christian\Desktop\YembaTones\RNN-pour-ASR-en-Yemba\vocabulaires\vocab4.json"
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 N_MELS = 80
 HIDDEN_DIM = 256
