@@ -1,7 +1,7 @@
 # model.py
-
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 
 class BiLSTM_CTC(nn.Module):
     def __init__(self, input_dim, hidden_dim, vocab_size, num_layers=3, dropout=0.3):
@@ -88,9 +88,6 @@ class LSTM_CTC(nn.Module):
         x = self.classifier(x)  
         return x
 
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
 
 class GRUEncoder(nn.Module):
     def __init__(self, input_dim, hidden_dim, num_layers=2, dropout=0.3):
