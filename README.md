@@ -57,7 +57,7 @@ Une application web simple construite avec **Gradio** permet :
 - Transcription brute avec les tons (`pá|haut`)
 - Transcription nettoyée pour la lecture (`pá`)
 
-➡️ [Accès temporaire en ligne](https://91465d951e86d66f8a.gradio.live/)
+➡️ [Accès temporaire en ligne](https://dfe195d422114124c0.gradio.live/)
 
 ---
 
